@@ -2,3 +2,81 @@
   margin: 0;
   padding: 0;
 }
+
+
+.buyMainDiv {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+.buyMainDiv h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buyMainDiv h1 span {
+  color: rgb(253, 162, 177);
+}
+
+.formItem1 label,
+.formItem2 label,
+.formItem3 label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formItem1,
+.formItem2,
+.formItem3 {
+  margin-top: 1rem;
+}
+
+.formItem1 input,
+.formItem2 input,
+.formItem3 input {
+  width: 300px;
+  height: 1.5rem;
+  padding: 3px;
+}
+
+button.payBtn {
+  color: white;
+  border: none;
+  background-color: rgb(253, 162, 177);
+  padding: 7px 16px 7px 16px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button.payBtn:active {
+  background-color: rgba(253, 162, 177, 0.706);
+}
+
+.memosDiv {
+  width: 80%;
+  margin: auto;
+}
+
+.memosDiv table {
+  margin-top: 2rem;
+  background-color: rgba(255, 192, 203, 0.67);
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.memosDiv th,
+td {
+  border: 1px solid white;
+  padding: 0.5rem;
+}

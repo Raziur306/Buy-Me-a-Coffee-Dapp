@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { ethers } from 'ethers';
 import abi from './constract/Coffee.json'
-import './App.css';
+import Buy from './components/Buy';
+import Memos from './components/Memos';
 
 
 
@@ -46,11 +47,12 @@ function App() {
         connectWallet()
     }, [])
 
-    console.log(state);
+
 
 
     return <>
-        <h1>Hello Wrold</h1>
+        <Buy state={state} />
+        <Memos state={state} />
     </>
 
 
