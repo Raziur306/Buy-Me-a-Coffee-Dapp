@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { memo, useEffect, useState } from 'react'
 
 function Memos({ state }) {
 
+
+    const [memos, setMemos] = useState([]);
+    const { contract } = state;
+    useEffect(() => {
+        const getData = async () => {
+            const data = await contract.getMemos();
+            setMemos(data);
+        }
+        contract && getData();
+
+    }, [contract])
 
 
     return (
@@ -15,29 +26,14 @@ function Memos({ state }) {
                         <th>Sender Address</th>
                     </tr>
 
-                    <tr>
-                        <td>Name</td>
-                        <td>Transaction Time</td>
-                        <td>Message</td>
-                        <td>Sender Address</td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td>Name</td>
-                        <td>Transaction Time</td>
-                        <td>Message</td>
-                        <td>Sender Address</td>
-                    </tr>
-
-                    <tr>
-                        <td>Name</td>
-                        <td>Transaction Time</td>
-                        <td>Message</td>
-                        <td>Sender Address</td>
-                    </tr>
-
+                    {memos && memos.map((memo, index) => {
+                        return <tr key={index}>
+                            <th>{memo.name}</th>
+                            <th>{new Date(memo.timeStamp * 1000).toLocaleString()}</th>
+                            <th>{memo.message}</th>
+                            <th>{memo.sender}</th>
+                        </tr>
+                    })}
                 </tbody>
             </table>
         </div>

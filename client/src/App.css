@@ -80,3 +80,14 @@ td {
   border: 1px solid white;
   padding: 0.5rem;
 }
+
+.transactionStatus {
+  margin-top: 1rem;
+  color: green;
+  text-align: center;
+}
+
+.progressbarDiv {
+  justify-content: center;
+  display: flex;
+}

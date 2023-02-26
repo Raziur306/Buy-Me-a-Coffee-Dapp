@@ -19,7 +19,7 @@ function App() {
 
         const connectWallet = async () => {
 
-            const contractAddress = 0x124d56Dd049a78AD9826aB6AD93BF03AC638e43C;
+            const contractAddress = "0x124d56Dd049a78AD9826aB6AD93BF03AC638e43C";
             const contractABI = abi.abi;
             try {
                 const { ethereum } = window;
@@ -47,13 +47,10 @@ function App() {
         connectWallet()
     }, [])
 
-
-
-
-    return <>
+    return <div>
         <Buy state={state} />
         <Memos state={state} />
-    </>
+    </div>
 
 
 
