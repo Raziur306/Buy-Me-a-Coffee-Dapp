@@ -37,7 +37,7 @@ Below I explain all the features I added to the front-end + what I used to build
 
 ![Screenshot (33)](https://user-images.githubusercontent.com/75040026/221435111-7eec6934-591b-4551-a10f-34126b4b6c88.png)
 
-- This page was designed randomly using (React, HTMl, CSS, Material UI).
+- This page was designed randomly using (React, html, CSS, Material UI).
 
 ### Transaction
 
