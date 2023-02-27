@@ -8,7 +8,6 @@ In this project I have used:
 - [Ether.js](https://github.com/ethers-io/ethers.js/)
 - [Solidity](https://github.com/ethereum/solidity)
 - [React](https://github.com/facebook/react)
-- [React](https://github.com/facebook/react)
 - [JavaScript](https://github.com/Raziur306)
 - [MetaMask](https://github.com/MetaMask)
 
